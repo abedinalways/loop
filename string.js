@@ -16,4 +16,20 @@ const firstName=first.toLowerCase()
 const secondName=second.toLowerCase()
 const nameOfMain = firstName.concat(' ').concat(secondName);
 console.log(nameOfMain);
-console.log(nameOfMain.includes('m'))
+console.log(nameOfMain.includes('m'));
+
+let sentence = 'I am learning web dev';
+let reverse = '';
+for (const letter of sentence) {
+  reverse = letter + reverse;
+}
+console.log(reverse);
+let rev=''
+for (let i = 0; i < sentence.length; i++){
+  let letter = sentence[i];
+  rev = letter + rev;
+}
+console.log(rev);
+
+let reversed = sentence.split('').reverse().join('');
+console.log(reversed);
